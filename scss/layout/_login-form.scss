@@ -1,0 +1,77 @@
+/*-----Login-----*/
+.Login{
+    display: flex;
+    justify-content: center;
+}
+
+.LoginContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    margin: 30px 0px 0px 0px;
+    align-items: center; 
+    box-shadow: 0.625rem 0.625rem .625rem rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+    background-color: #ffffff;
+    h2{  
+        color: #454545; 
+        font-family: 'Monserrat', sans-serif,bold;
+        font-size: 30px;
+        font-weight: 100;
+    }
+    h3{
+        padding: 5px 0px;  
+        color: #454545; 
+        font-family: 'Monserrat', sans-serif;
+        font-size: 20px;
+    }
+}
+.InputInsert{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding: 10px 5px;
+    margin: 10px auto;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    color: #A3A1A1;
+    border-style: none;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+}
+
+.InputSend{
+    width: 300px;
+    padding: 10px;
+    margin: 5px auto;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    color: #ffff;
+    background-color: #FF6000;
+    border-radius: 2px;
+    border-style: none;
+}
+
+.AnclasForm a{
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    color: #454545;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Monserrat', sans-serif;
+}
+
+.MediaSocialForm .IconGoogle{
+    padding: 10px;
+    margin: 0px 30px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+
+.MediaSocialForm .IconFacebook{
+    padding: 10px;
+    margin: 0px 30px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
