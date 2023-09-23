@@ -17,10 +17,15 @@
             font-size: .75rem;/*15px*/
         }
     }
-    .SectionCards h2{
-        padding: .25rem; /*4px*/
-        margin: .1875rem; /*3px*/  
-        font-size: 1.25rem; /*20px*/
+    .SectionCards {
+        h2{
+            padding: .25rem; /*4px*/
+            margin: .1875rem; /*3px*/  
+            font-size: 1.25rem; /*20px*/
+        }
+    }
+    main{
+        height: 90vh;
     }
 
     .CardsInfo{
@@ -48,13 +53,28 @@
             font-size: .5rem;/*8px*/
         }
     }    
+    /*----- Footer ------*/
+    .ContainerFooter{
+        font-size: .625rem;/*10px*/
+        padding: .9375rem;/*15px*/
+        p{
+            a{
+                padding: .3125rem;/*5px*/
+            }
+        }
+    }
+    .Copyright{
+        font-size: .625rem;/*10px*/
+        padding: .9375rem;/*15px*/
+    }
+
     /*----- Login.html responsive ------*/
-    /*El login esta maquetado con bootstrap revisar el html para cualquier cambio*/
+    /*El login ya estan responsive*/
 
     /*----- Register.html responsive ------*/
-    /*El register esta maquetado con bootstrap revisar el html para cualquier cambio*/
+    /*El register ya estan responsive*/
 
-     /*-----Dashboar-----*/
+    /*-----Dashboar-----*/
     /*---Contenedor principal---*/
     .GridDashBoard{
         @include grid(9.375rem 1fr, 4.375rem 100vh, "HeaderDB MainDB""HeaderDB ContentDB");
@@ -64,6 +84,12 @@
         img{
             width: 5rem;/*80px*/
             height: 5rem;/*80px*/
+        }
+        h2 a{
+            font-size: .75rem;/*12px*/
+        }
+        h2 a:hover{
+            font-size: .9375rem;/*15px*/
         }
     }
     /*---Section 2 nav superior----*/

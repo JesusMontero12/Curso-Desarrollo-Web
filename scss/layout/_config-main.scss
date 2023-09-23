@@ -20,6 +20,7 @@
     padding: 0;
     margin: 0;
     .CardHeader{
+        width: 100%;
         background-color: $bg-6;
         box-shadow: .3125rem .3125rem .3125rem rgba(0, 0, 0, 0.2); /*5px 5px 5px*/
         .GridHeaderCard{
@@ -66,6 +67,7 @@
     }
 }
 .ProfileSection{
+    width: 100%;
     padding: 1.5625rem;/*25px*/
     box-shadow: .3125rem .3125rem .3125rem rgba(0, 0, 0, 0.2);/*5px 5px 5px*/
     .BtnAConfig{

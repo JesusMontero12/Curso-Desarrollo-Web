@@ -1,23 +1,30 @@
 /*----- estilos responsivos para Celulares ------*/
 @media(max-width: 425px){
     /*----- Index.html Responsive ------*/
-     header .LogoNav{
-        .LogoHeader{
+    header{ 
+        .LogoNav{
+            display: flex;
+            justify-content: space-evenly;
+            a{
+                .LogoHeader{
+                    display: none;
+                }
+                h2{
+                    display:flex;
+                }
+            }
+            .IconBurger{
+                display: block;
+                width: 2.1875rem;
+                height: 2.1875rem;
+                position: absolute;
+                right: 20px;
+            }
+        }
+        
+        .NavBar{
             display: none;
         }
-        h2{
-            display:flex;
-        }
-        .IconBurger{
-            display: block;
-            width: 2.1875rem;
-            height: 2.1875rem;
-            position: absolute;
-            right: 20px;
-        }
-    }
-    .NavBar{
-        display: none;
     }
     .SectionPrincipal {
         height: 150px; /*300px*/
@@ -95,11 +102,25 @@
             font-size: .5rem;/*8px*/
         }
     }
+     /*----- Footer ------*/
+     .ContainerFooter{
+        font-size: .5rem;/*8px*/
+        padding: .75rem;/*12px*/
+        p{
+            a{
+                padding: .3125rem;/*5px*/
+            }
+        }
+    }
+    .Copyright{
+        font-size: .5rem;/*8px*/
+        padding: .75rem;/*12px*/
+    }
     /*----- Login.html responsive ------*/
-    /*El login esta maquetado con bootstrap revisar el html para cualquier cambio*/
+    /*El login ya estan responsive*/
 
     /*----- Register.html responsive ------*/
-    /*El register esta maquetado con bootstrap revisar el html para cualquier cambio*/
+    /*El register ya estan responsive*/
 
      /*-----Dashboar-----*/
     /*---Contenedor principal---*/

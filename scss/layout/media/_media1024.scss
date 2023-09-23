@@ -47,12 +47,26 @@
             font-size: .8125rem; /*13px*/
         } 
     }
+    /*----- Footer ------*/
+    .ContainerFooter{
+        font-size: .8125rem;/*13px*/
+        padding: 1.125rem;/*18px*/
+        p{
+            a{
+                padding: .5rem;/*8px*/
+            }
+        }
+    }
+    .Copyright{
+        font-size: .8125rem;/*13px*/
+        padding: 1.125rem;/*18px*/
+    }
     
     /*----- Login.html responsive ------*/
-    /*El login esta maquetado con bootstrap revisar el html para cualquier cambio*/
+    /*El login ya estan responsive*/
 
     /*----- Register.html responsive ------*/
-    /*El register esta maquetado con bootstrap revisar el html para cualquier cambio*/
+    /*El register ya estan responsive*/
 
     /*-----Dashboar-----*/
     /*---Contenedor principal---*/

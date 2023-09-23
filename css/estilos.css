@@ -50,18 +50,17 @@ Fuentes tipograficas:
   text-decoration: none;
   color: #ffffff;
 }
-.LogoNav .LogoHeader {
+.LogoNav a .LogoHeader {
   width: 1.875rem; /*30px*/
   height: 1.875rem; /*30px*/
-  padding: 0.1875rem; /*3px*/
-  margin: 0rem 0.625rem; /*10px*/
+  margin: 0rem 0.5rem; /*0px 8px*/
+}
+.LogoNav a h2 {
+  font-family: "Montserrat", sans-serif, bold;
+  font-size: 1.5625rem; /*25px*/
 }
 .LogoNav .IconBurger {
   display: none;
-}
-.LogoNav h2 {
-  font-family: "Montserrat", sans-serif, bold;
-  font-size: 1.5625rem; /*25px*/
 }
 
 /*---Nav del header(Inicio,login,register)*/
@@ -184,14 +183,67 @@ Fuentes tipograficas:
   margin: 0.625rem; /*10px*/
 }
 
-/*-----El footer esta hecho con Bootstrap revisar en el index las modificaciones-----*/
 /*-----Footer-----*/
-.DivFooter {
-  margin-top: 4.375rem; /*70px*/
+.Footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContainerFooter {
+  font-family: verdana;
+  font-size: 0.9375rem; /*15px*/
+  padding: 1.25rem; /*20px*/
+  text-align: center;
+  background-color: #212529;
+}
+.ContainerFooter p {
+  margin: 0;
+  padding: 0.625rem; /*10px*/
+}
+.ContainerFooter p span {
+  color: #ffffff;
+}
+.ContainerFooter p a {
+  padding: 0.625rem; /*10px*/
+  border-radius: 0.5rem; /*8px*/
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  color: #ffffff;
+}
+.ContainerFooter p a:hover {
+  color: #212529;
+  background-color: #ffffff;
+}
+
+.Copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9375rem; /*15px*/
+  padding: 1.125rem; /*18px*/
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.Copyright p {
+  margin: 0;
+  padding: 0.625rem; /*10px*/
+  color: #ffffff;
+}
+.Copyright p a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.Copyright p a:hover {
+  text-decoration: none;
 }
 
 /*login, register*/
 /*-----Login-----*/
+.MainLogin {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Login {
   display: flex;
   justify-content: center;
@@ -200,78 +252,95 @@ Fuentes tipograficas:
 .LoginContainer {
   display: flex;
   flex-direction: column;
-  padding: 30px 40px;
-  margin: 30px 0px 0px 0px;
   align-items: center;
+  padding: 1.875rem 2.5rem; /*30px 40px*/
   box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 0.3125rem; /*5px*/
   background-color: #ffffff;
 }
-.LoginContainer h2 {
-  color: #454545;
-  font-family: "Monserrat", sans-serif, bold;
-  font-size: 30px;
-  font-weight: 100;
+.LoginContainer .imgForm {
+  border-radius: 50%;
+  background-color: #212529;
+}
+.LoginContainer .imgForm img {
+  width: 3.125rem; /*50px*/
+  height: 3.125rem; /*50px*/
+  padding: 0.625rem; /*10px*/
 }
 .LoginContainer h3 {
-  padding: 5px 0px;
+  padding: 0.3125rem 0rem; /*5px 0px*/
   color: #454545;
-  font-family: "Monserrat", sans-serif;
-  font-size: 20px;
+  font-family: "Monserrat", sans-serif, bold;
+  font-size: 1.875rem; /*30px*/
 }
 
-.InputInsert {
+.InputsForm {
+  margin: 0.625rem auto; /*10px auto*/
+}
+.InputsForm .InputInsert {
   display: flex;
   justify-content: center;
-  width: 300px;
-  padding: 10px 5px;
-  margin: 10px auto;
+  width: 18.75rem; /*300px*/
+  padding: 0.625rem 0rem 0.625rem 2.5rem; /*10px 0px 10px 40px*/
   font-family: Verdana, sans-serif;
-  font-size: 16px;
-  color: #A3A1A1;
+  font-size: 1rem; /*16px*/
+  color: #454545;
   border-style: none;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.6);
-  border-radius: 2px;
+  border-radius: 0.3125rem; /*5px*/
+}
+.InputsForm img {
+  position: absolute;
+  width: 1.25rem; /*20px*/
+  height: 1.25rem; /*20px*/
+  margin: 0.75rem 0rem 0rem 0.625rem; /*12px 0px 0px 10px*/
 }
 
 .InputSend {
-  width: 300px;
-  padding: 10px;
-  margin: 5px auto;
+  width: 18.75rem; /*300px*/
+  padding: 0.625rem; /*10px*/
+  margin: 0.625rem auto; /*10px auto*/
   font-family: Verdana, sans-serif;
-  font-size: 16px;
-  color: white;
-  background-color: #FF6000;
-  border-radius: 2px;
+  font-size: 1rem; /*16px*/
+  color: #ffffff;
+  background-color: #212529;
+  border-radius: 0.125rem; /*2px*/
   border-style: none;
+}
+
+.InputSend:hover {
+  background-color: #454545;
 }
 
 .AnclasForm a {
   display: block;
-  padding: 5px;
-  margin: 10px;
-  color: #454545;
+  padding: 0.125rem; /*2px*/
+  margin: 0.125rem; /*2px*/
+  color: #212529;
   text-align: center;
   text-decoration: none;
   font-family: "Monserrat", sans-serif;
+  font-size: 0.9375rem; /*15px*/
+}
+.AnclasForm a:hover {
+  text-decoration: underline;
 }
 
-.MediaSocialForm .IconGoogle {
-  padding: 10px;
-  margin: 0px 30px;
+.MediaSocialForm .IconGoogle, .MediaSocialForm .IconFacebook {
+  padding: 0.625rem; /*10px*/
+  margin: 0.625rem 1.875rem; /*10px 30px*/
   border-radius: 50%;
   background-color: #D9D9D9;
 }
-
-.MediaSocialForm .IconFacebook {
-  padding: 10px;
-  margin: 0px 30px;
-  border-radius: 50%;
-  background-color: #D9D9D9;
-}
-
 /*-----El archivo register.html contiene boostrap cualquier cambio revisar el archio html-----*/
 /*-----Register-----*/
+.MainRegister {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Register {
   display: flex;
   justify-content: center;
@@ -280,27 +349,26 @@ Fuentes tipograficas:
 .RegisterContainer {
   display: flex;
   flex-direction: column;
-  padding: 30px 40px;
-  margin: 30px 0px 0px 0px;
   align-items: center;
+  padding: 1.25rem 2.5rem; /*20px 40px*/
   box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
   border-radius: 0.3125rem; /*5px*/
   background-color: #ffffff;
 }
-.RegisterContainer h2 {
-  color: #454545;
-  font-family: "Monserrat", sans-serif, bold;
-  font-size: 30px;
-  font-weight: 100;
+.RegisterContainer .imgForm {
+  border-radius: 50%;
+  background-color: #212529;
+}
+.RegisterContainer .imgForm img {
+  width: 3.125rem; /*50px*/
+  height: 3.125rem; /*50px*/
+  padding: 0.625rem; /*10px*/
 }
 .RegisterContainer h3 {
-  padding: 5px 0px;
+  padding: 0.3125rem 0rem; /*5px 0px*/
   color: #454545;
-  font-family: "Monserrat", sans-serif;
-  font-size: 20px;
-}
-.RegisterContainer label {
-  color: #454545;
+  font-family: "Monserrat", sans-serif, bold;
+  font-size: 1.875rem; /*30px*/
 }
 
 /*dashboard: grid, header, nav superior, main*/
@@ -525,6 +593,7 @@ Fuentes tipograficas:
   margin: 0;
 }
 .CardConfig .CardHeader {
+  width: 100%;
   background-color: #F3F3F3;
   box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2); /*5px 5px 5px*/
 }
@@ -568,6 +637,7 @@ Fuentes tipograficas:
 }
 
 .ProfileSection {
+  width: 100%;
   padding: 1.5625rem; /*25px*/
   box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2); /*5px 5px 5px*/
 }
@@ -654,10 +724,22 @@ Fuentes tipograficas:
   .CardsInfo p {
     font-size: 0.8125rem; /*13px*/
   }
+  /*----- Footer ------*/
+  .ContainerFooter {
+    font-size: 0.8125rem; /*13px*/
+    padding: 1.125rem; /*18px*/
+  }
+  .ContainerFooter p a {
+    padding: 0.5rem; /*8px*/
+  }
+  .Copyright {
+    font-size: 0.8125rem; /*13px*/
+    padding: 1.125rem; /*18px*/
+  }
   /*----- Login.html responsive ------*/
-  /*El login esta maquetado con bootstrap revisar el html para cualquier cambio*/
+  /*El login ya estan responsive*/
   /*----- Register.html responsive ------*/
-  /*El register esta maquetado con bootstrap revisar el html para cualquier cambio*/
+  /*El register ya estan responsive*/
   /*-----Dashboar-----*/
   /*---Contenedor principal---*/
   .GridDashBoard {
@@ -748,6 +830,9 @@ Fuentes tipograficas:
     margin: 0.1875rem; /*3px*/
     font-size: 1.25rem; /*20px*/
   }
+  main {
+    height: 90vh;
+  }
   .CardsInfo {
     width: 280px; /*250px*/
     height: 160px; /*160px*/
@@ -773,10 +858,22 @@ Fuentes tipograficas:
   .CardsInfo p {
     font-size: 0.5rem; /*8px*/
   }
+  /*----- Footer ------*/
+  .ContainerFooter {
+    font-size: 0.625rem; /*10px*/
+    padding: 0.9375rem; /*15px*/
+  }
+  .ContainerFooter p a {
+    padding: 0.3125rem; /*5px*/
+  }
+  .Copyright {
+    font-size: 0.625rem; /*10px*/
+    padding: 0.9375rem; /*15px*/
+  }
   /*----- Login.html responsive ------*/
-  /*El login esta maquetado con bootstrap revisar el html para cualquier cambio*/
+  /*El login ya estan responsive*/
   /*----- Register.html responsive ------*/
-  /*El register esta maquetado con bootstrap revisar el html para cualquier cambio*/
+  /*El register ya estan responsive*/
   /*-----Dashboar-----*/
   /*---Contenedor principal---*/
   .GridDashBoard {
@@ -789,6 +886,12 @@ Fuentes tipograficas:
   .ProfileUser img {
     width: 5rem; /*80px*/
     height: 5rem; /*80px*/
+  }
+  .ProfileUser h2 a {
+    font-size: 0.75rem; /*12px*/
+  }
+  .ProfileUser h2 a:hover {
+    font-size: 0.9375rem; /*15px*/
   }
   /*---Section 2 nav superior----*/
   .GridMain h2 {
@@ -873,10 +976,14 @@ Fuentes tipograficas:
 /*----- estilos responsivos para Celulares ------*/
 @media (max-width: 425px) {
   /*----- Index.html Responsive ------*/
-  header .LogoNav .LogoHeader {
+  header .LogoNav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header .LogoNav a .LogoHeader {
     display: none;
   }
-  header .LogoNav h2 {
+  header .LogoNav a h2 {
     display: flex;
   }
   header .LogoNav .IconBurger {
@@ -886,7 +993,7 @@ Fuentes tipograficas:
     position: absolute;
     right: 20px;
   }
-  .NavBar {
+  header .NavBar {
     display: none;
   }
   .SectionPrincipal {
@@ -959,10 +1066,22 @@ Fuentes tipograficas:
   .CardsInfo p {
     font-size: 0.5rem; /*8px*/
   }
+  /*----- Footer ------*/
+  .ContainerFooter {
+    font-size: 0.5rem; /*8px*/
+    padding: 0.75rem; /*12px*/
+  }
+  .ContainerFooter p a {
+    padding: 0.3125rem; /*5px*/
+  }
+  .Copyright {
+    font-size: 0.5rem; /*8px*/
+    padding: 0.75rem; /*12px*/
+  }
   /*----- Login.html responsive ------*/
-  /*El login esta maquetado con bootstrap revisar el html para cualquier cambio*/
+  /*El login ya estan responsive*/
   /*----- Register.html responsive ------*/
-  /*El register esta maquetado con bootstrap revisar el html para cualquier cambio*/
+  /*El register ya estan responsive*/
   /*-----Dashboar-----*/
   /*---Contenedor principal---*/
   .GridDashBoard {
